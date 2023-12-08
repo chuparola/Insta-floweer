@@ -1,0 +1,34 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+    
+<!-- Header -->
+    <section class="section-header">
+        <div class="main-header">
+            <h1>Ganhe Seguidores Agora!</h1>
+            <p>Para <span class="cor-vermelha">destacar-se</span> nesse vasto oceano digital, ganhar seguidores no <span class="cor-laranja">Instagram</span> é uma busca constante. Desbravaremos estratégias inteligentes que não apenas aumentam números, mas também fortalecem sua presença <span class="cor-verde">online</span> de maneira significativa.</p>
+            
+            <div class="botao1">
+                <a href="{% url "planos" %}">Ganhar Seguidores</a>
+            </div>
+
+            <br><br>
+
+            <div class="botao2">
+                <a href="#explication">Como Funciona?</a>
+            </div>                
+        </div>
+    </section>
+<!-- Header End -->
+
+<!-- Explication -->
+    <section id="explication" class="section-explication">
+        <div class="main-explication">
+            <h1>Como Funciona?</h1>
+            <br><br><br>
+            <p>Para aumentar seus seguidores no Instagram, é crucial cultivar um conteúdo autêntico e cativante. Primeiramente, otimize seu perfil com uma biografia envolvente e uma foto de perfil atrativa. Utilize hashtags populares e específicas do seu nicho para ampliar o alcance das suas postagens, permitindo que usuários interessados encontrem seu perfil mais facilmente. Além disso, interaja ativamente com seus seguidores respondendo a comentários, mensagens diretas e participando de conversas relacionadas aos seus posts. Porém tudo que você leu no texto acima não é mais necessário fazer, nossa ferramenta faz tudo isso automaticamento, se quiser saber mais <a class="clique-aqui" href="{% url "planos" %}">clique aqui</a></p>
+        </div>
+    </section>
+<!-- Explication End -->
+    
+{% endblock content %}

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "global/partials/_head.html" %}
+</head>
+<body>
+
+    {% include "global/partials/_menu.html" %}
+
+    {% block content %}{% endblock content %}
+
+    <a class="back-to-top" href="https://www.instagram.com/blackoutzt/" target="_blank">
+        <img src="{% static "global/img/instagram.svg" %}" alt="icone do whatsapp">
+    </a>
+
+    <div class="fale-conosco">
+        <h4>fale-conosco</h4>
+    </div>
+
+    {% include "global/partials/_footer.html" %}
+
+</body>
+
+<script src="{% static 'global/js/confirmacao_email.js' %}"></script>
+
+</html>

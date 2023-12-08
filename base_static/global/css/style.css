@@ -1,0 +1,955 @@
+:root {
+    --color-black: #000;
+    --color-white: #eee;
+    --color-dark: #414141;
+    --color-blue: blue;
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-header {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-explication {
+    background: var(--color-dark);
+    height: 100vh;
+}
+
+.section-planos {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-pedido {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 120vh;
+}
+
+.section-contato {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-sobre {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-menu {
+    background-image: url(../img/logo-instagram.jpg);
+    background-position: center center;
+    background-size: cover;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    color: var(--color-white);
+    position: relative;
+    top: -120px;
+}
+
+.main-header p {
+    color: var(--color-white);
+    width: 50%;
+    position: relative;
+    top: -50px;
+    text-align: center;
+}
+
+.main-pedido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-pedido {
+    background: var(--color-white);
+    color: var(--color-black);
+    margin-top: 9rem;
+    width: 500px;
+    height: 800px;
+    border-radius: 5px;
+}
+
+.container-pedido h5 {
+    position: relative;
+    top: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+
+.container-pedido h6 {
+    position: relative;
+    top: 4rem;
+    right: -3rem;
+    font-size: 15px;
+}
+
+.input1-pedido {
+    position: relative;
+    top: 5rem;
+    right: -3rem;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.container-resumo-pedido {
+    position: relative;
+    top: 5rem;
+    right: -3rem;
+    width: 400px;
+    height: 200px;
+    border: 0.1px solid var(--color-black);
+}
+
+.container-resumo-pedido h6 {
+    position: relative;
+    top: 0.5rem;
+    right: -0.5rem;
+}
+
+.container-resumo-pedido span {
+    position: relative;
+    top: -0.5rem;
+    right: -18rem;
+}
+
+.container-resumo-pedido p {
+    padding-left: 10px;
+}
+
+.botao-finalizar-pedido {
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 5px;
+    padding: 15px 140px;
+}
+
+.botao-finalizar-pedido:hover {
+    transition: all 300ms ease;
+    background: var(--color-white);
+    color: var(--color-black);
+    border: 0.8px solid var(--color-black);
+}
+
+.main-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-contato {
+    background: var(--color-white);
+    color: var(--color-black);
+    margin-top: 4rem;
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    position: relative;
+    right: 2rem;
+}
+
+.container-contato h5 {
+    position: relative;
+    top: 2rem;
+    right: -5rem;
+}
+
+.container-contato h6 {
+    position: relative;
+    top: 4rem;
+    right: -5rem;
+    font-size: 0.83em;
+}
+
+.container-contato textarea {
+    position: relative;
+    top: 4rem;
+    right: -5rem;
+    padding: 5px;
+    font-size: 1rem;
+    width: 300px;
+    outline: none;
+
+}
+
+.input-contato {
+    outline: none;
+    position: relative;
+    top: 3rem;
+    right: -5rem;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.botao-contato {
+    background: var(--color-black);
+    color: var(--color-white);
+    position: relative;
+    top: 8rem;
+    right: -6.5rem;
+    padding: 10px 100px;
+    border-radius: 5px;
+}
+
+.main-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-center-sobre {
+    position: relative;
+    top: -4rem;
+    font-size: 30px;
+    text-align: center;
+}
+
+.botao1 a {
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 10px 100px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.botao1:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1px 0.1px 30px var(--color-white);
+    background: var(--color-white);
+}
+
+.botao2 a {
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 10px 108px;
+    border-radius: 10px;
+}
+
+.botao2:hover {
+    transform: scale(1.1);
+    box-shadow: 0.1px 0.1px 30px var(--color-white);
+    background: var(--color-white);
+}
+
+.main-explication {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+.main-explication h1 {
+    font-size: 30px;
+    color: var(--color-white);
+}
+
+.main-explication p {
+    color: var(--color-white);
+    width: 50%;
+    word-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-planos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.plano1 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-white);
+    border-radius: 10px;
+    border: 0.8px solid var(--color-black);
+    text-align: center;
+}
+
+.plano1 h1 {
+    position: relative;
+    top: 0.5rem;
+    text-align: center;
+}
+
+.plano1 p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plano1 ul {
+    text-align: center;
+    padding-top: 50px;
+    list-style: none;
+}
+
+.plano1 span {
+    position: relative;
+    top: 1rem;
+    font-size: 20px;
+}
+
+.plano1 a {
+    position: relative;
+    top: 50px;
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 10px 100px;
+}
+
+#mensagem {
+    display: none;
+    background-color: var(--color-black);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    font-size: 2rem;
+}
+
+.plano1:hover {
+    transition: all 300ms ease;
+    color: var(--color-black);
+    transform: scale(1.1);
+}
+
+.plano1 a:hover {
+    background-blend-mode: color;
+    background: rgb(203, 187, 187);
+    color: var(--color-black);
+}
+
+.plano2 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-white);
+    border-radius: 10px;
+    border: 0.8px solid var(--color-black);
+    text-align: center;
+}
+
+.plano2:hover {
+    transition: all 300ms ease;
+    color: var(--color-black);
+    transform: scale(1.1);
+}
+
+.plano2 h1 {
+    position: relative;
+    top: 0.5rem;
+    text-align: center;
+}
+
+.plano2 p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plano2 ul {
+    text-align: center;
+    padding-top: 50px;
+    list-style: none;
+}
+
+.plano2 span {
+    position: relative;
+    top: 1rem;
+    font-size: 20px;
+}
+
+.plano2 a {
+    position: relative;
+    top: 50px;
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 10px 100px;
+}
+
+.plano2 a:hover {
+    color: var(--color-black);
+    background-blend-mode: color;
+    background: rgb(203, 187, 187);
+}
+
+.plano3 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-white);
+    border-radius: 10px;
+    border: 0.8px solid var(--color-black);
+    text-align: center;
+}
+
+.plano3:hover {
+    transition: all 300ms ease;
+    color: var(--color-black);
+    transform: scale(1.1);
+}
+
+.plano3 h1 {
+    position: relative;
+    top: 0.5rem;
+    text-align: center;
+}
+
+.plano3 p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plano3 ul {
+    text-align: center;
+    padding-top: 50px;
+    list-style: none;
+}
+
+.plano3 span {
+    position: relative;
+    top: 1rem;
+    font-size: 20px;
+}
+
+.plano3 a {
+    position: relative;
+    top: 50px;
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding: 10px 100px;}
+
+.plano3 a:hover {
+    color: var(--color-black);
+    background-blend-mode: color;
+    background: rgb(203, 187, 187);
+}
+
+.text-center {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    right: 1rem;
+    padding-bottom: 2rem;
+}
+
+.clique-aqui {
+    color: var(--color-blue);
+}
+
+.menu {
+    background: var(--color-white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu h1 a {
+    font-size: 2.3rem;
+    color: var(--color-black);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 20px;
+    color: var(--color-black);
+}
+
+.text-center-contato {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -18rem;
+    right: -17rem;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn-pedido {
+    width: 400px;
+    height: 40px;
+    background: var(--color-black);
+    color: var(--color-white);
+    border-radius: 5px;
+    position: relative;
+    top: -1rem;
+    cursor: pointer;
+}
+
+.btn-pedido:hover {
+    color: var(--color-black);
+    background-blend-mode: color;
+    background: rgb(203, 187, 187);
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--color-white);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--color-black);
+    border: 0.1px solid var(--color-black);
+}
+
+.fale-conosco {
+    position: fixed;
+    bottom: 3rem;
+    right: 8rem;
+    width: 8rem;
+    height: 2rem;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--color-black);
+    border: 0.1px solid var(--color-black);
+}
+
+.fale-conosco h4 {
+    margin-left: 10px;
+}
+
+.footer {
+    background: var(--color-black);
+    height: 10rem;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.line-spacing-top {
+    padding-top: none;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        bottom: 0;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .menu-content, .main-menu ul {
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .menu-content ul li a:hover {
+        color: var(--color-white);
+        background: var(--color-black);
+    }
+
+    .menu-content, .main-menu ul li {
+        padding: 10px;
+    }
+
+    .menu-content, .main-menu ul li a {
+        border: 0.1px solid var(--color-black);
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu-content ul li a {
+        background: var(--color-white);
+    }
+
+    .menu-content {
+        height: 110vh;
+        z-index: 1;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 1rem;
+        background-image: url(../img/logo-instagram.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: var(--color-white);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+    .main-header p {
+        width: 100%;
+    }
+
+    .main-header h1 {
+        font-size: 2rem;
+        color: var(--color-white);
+        position: relative;
+        top: -120px;
+    }
+
+    .botao1 a {
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: all 1s ease-in-out;
+    }
+
+    .botao2 a {
+        background: var(--color-white);
+        color: var(--color-black);
+        padding: 10px 17px;
+        border-radius: 10px;
+        transition: all 1s ease-in-out;
+    }
+
+    .main-explication p {
+        color: var(--color-white);
+        width: 100%;
+        word-spacing: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-explication {
+        background: var(--color-dark);
+        height: 120vh;
+    }
+
+    .main-planos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .text-center {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        top: -6rem;
+    }
+
+    .line-spacing-top {
+        padding-top: 5rem;
+    }
+
+    .section-planos {
+        background-image: url(../img/logo-instagram.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 150vh;
+    }
+
+    .plano1 a {
+        background: var(--color-dark);
+        color: var(--color-white);
+        padding: 10px 100px;
+        position: relative;
+        top: -1.5rem;
+    }
+
+    .plano1 ul {
+        position: relative;
+        top: -2rem;
+        text-align: center;
+        padding-top: 50px;
+        list-style: none;
+    }
+
+    .plano1 span {
+        position: relative;
+        top: -3rem;
+        font-size: 20px;
+    }
+    
+    .plano1:hover {
+        transition: none;
+        color: none;
+        transform: none;
+    }
+
+    .plano2 a {
+        background: var(--color-dark);
+        color: var(--color-white);
+        padding: 10px 100px;
+        position: relative;
+        top: -1.5rem;
+    }
+    
+    .plano2 ul {
+        position: relative;
+        top: -2rem;
+        text-align: center;
+        padding-top: 50px;
+        list-style: none;
+    }
+
+    .plano2 span {
+        position: relative;
+        top: -3rem;
+        font-size: 20px;
+    }
+
+    .plano2:hover {
+        transition: none;
+        color: none;
+        transform: none;
+    }
+
+    .plano3 a {
+        background: var(--color-dark);
+        color: var(--color-white);
+        padding: 10px 100px;
+        position: relative;
+        top: -1.5rem;
+    }
+
+    .plano3 ul {
+        position: relative;
+        top: -2rem;
+        text-align: center;
+        padding-top: 50px;
+        list-style: none;
+    }
+
+    .plano3 span {
+        position: relative;
+        top: -3rem;
+        font-size: 20px;
+    }
+
+    .plano3:hover {
+        transition: none;
+        color: none;
+        transform: none;
+    }
+
+    .container-pedido {
+        background: var(--color-white);
+        color: var(--color-black);
+        margin-top: 6rem;
+        width: 350px;
+        height: 800px;
+        border-radius: 5px;
+    }
+
+    .input1-pedido {
+        position: relative;
+        top: 5rem;
+        right: -3rem;
+        width: 250px;
+        height: 40px;
+        outline: none;
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .container-resumo-pedido {
+        position: relative;
+        top: 5rem;
+        right: -3rem;
+        width: 250px;
+        height: 200px;
+        border: 0.1px solid var(--color-black);
+    }
+
+    .container-resumo-pedido span {
+        position: relative;
+        top: -0.5rem;
+        right: -9.5rem;
+        font-size: 14px;
+    }
+
+    .container-resumo-pedido h6 {
+        font-size: 12px;    
+    }
+
+    .botao-finalizar-pedido {
+        position: relative;
+        top: -1rem;
+        background: var(--color-black);
+        color: var(--color-white);
+        border-radius: 5px;
+        padding: 10px 65px;
+    }
+
+    .section-pedido {
+        background-image: url(../img/logo-instagram.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 120vh;
+    }
+
+    .text-center-contato {
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        top: -18rem;
+        right: -10rem;
+    }
+
+    .container-contato h5 {
+        position: relative;
+        top: 2rem;
+        right: -2rem;
+    }
+    
+    .container-contato h6 {
+        position: relative;
+        top: 4rem;
+        right: -2rem;
+        font-size: 0.83em;
+    }
+    
+    .container-contato textarea {
+        position: relative;
+        top: 4rem;
+        right: -2rem;
+        padding: 5px;
+        font-size: 1rem;
+        width: 250px;
+        outline: none;
+    
+    }
+    
+    .input-contato {
+        outline: none;
+        position: relative;
+        top: 3rem;
+        right: -2rem;
+        width: 250px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    
+    .botao-contato {
+        background: var(--color-black);
+        color: var(--color-white);
+        position: relative;
+        top: 8rem;
+        right: -2rem;
+        padding: 10px 100px;
+        border-radius: 5px;
+    }
+
+    .text-center-sobre {
+        position: relative;
+        top: -0.5rem;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .btn-pedido {
+        width: 250px;
+        height: 40px;
+        background: var(--color-black);
+        color: var(--color-white);
+        border-radius: 5px;
+        position: relative;
+        top: -1rem;
+        cursor: pointer;
+    }
+
+}

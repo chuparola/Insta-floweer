@@ -1,0 +1,52 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+
+<!-- Planos -->
+    <section class="section-planos">
+
+        <div class="line-spacing-top"></div>       
+        <div class="line-spacing-top"></div>       
+
+        <div class="text-center">
+            <h1>Planos</h1>
+        </div>
+
+        <div class="main-planos">
+            <div class="plano1">
+                <h1>Instagram Conhecido</h1>
+                <p>Ganhe entre 360 e 510 Seguidores por mês</p>
+                <ul>
+                    <li>✅ 12 a 17 Seguidores por dia</li>
+                </ul>
+                <br><br>
+                <span>R$ 19,90 /Mês</span>
+                <a href="{% url "pedido1" %}">Comprar</a>
+            </div>
+            <div class="plano2">
+                <h1>Instagram Popular</h1>
+                <p>Ganhe entre 510 e 900 Seguidores por mês</p>
+                <ul>
+                    <li>✅ 17 a 30 Seguidores por dia</li>
+                </ul>
+                <br><br>
+                <span>R$ 39,90 /Mês</span>
+                <br>
+                <a href="{% url "pedido2" %}">Comprar</a>
+            </div>
+            <div class="plano3">
+                <h1>Instagram Famoso</h1>
+                <p>Ganhe entre 1.500 e 2.190 Seguidores por mês</p>
+                <ul>
+                    <li>✅ 50 a 73 Seguidores por dia!</li>
+                </ul>
+                <br><br>
+                <span>R$ 69,90 /Mês</span>
+                <br>
+                <a href="{% url "pedido3" %}">Comprar</a>
+            </div>
+        </div>
+    </section>
+<!-- Planos End -->
+
+{% endblock content %}

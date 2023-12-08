@@ -1,0 +1,41 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+
+    <section class="section-pedido">
+        <div class="main-pedido">
+            <div class="container-pedido">
+                <form action="{% url 'pedido3' %}" method="post" autocomplete="off">
+                    {% csrf_token %}
+                    <h5>Insira suas Informações</h5>
+                    <h6>Perfil do Instagram</h6>
+                    <input class="input1-pedido" placeholder="Insira seu @usuário" type="text" name="usuario" required>
+                    <br><br><br>
+                    <h6>Senha do Instagram</h6>
+                    <input class="input1-pedido" placeholder="Insira sua senha" type="text" name="senha" required>
+                    <br><br><br>
+                    <h6>E-mail</h6>
+                    <input class="input1-pedido" placeholder="insira seu E-mail" type="email" name="email" required>
+                    <br><br><br>
+                    <h6>Whatsapp (Opcional)</h6>
+                    <input class="input1-pedido" placeholder="Insira seu Whatsapp com DDD" type="number">
+                    <br><br><br><br>
+                    <h6>Resumo do Pedido</h6>
+                    <div class="container-resumo-pedido">
+                        <h6>Instagram Famoso</h6>
+                        <span>R$ 69,90 /Mês</span>
+                        <br><br><br>
+                        <p>Ganhe entre 1.500 e 2.190 Seguidores por mês</p>
+                        <br>
+                        <p>✅ 50 a 73 Seguidores por dia!</p>
+                        <br>
+                        <p>✅ Cancele a qualquer Momento</p>
+                        <br><br><br><br>
+                        <button class="btn-pedido" type="submit">Finalizar Pedido</button>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends "global/base.html" %}
+
+{% block content %}
+
+    <section class="section-contato">
+        <div class="main-contato">
+
+            <div class="text-center-contato">
+                Fale Conosco.
+            </div>
+
+            <div class="container-contato">
+                <h5>Insira seu E-mail</h5>
+                <input class="input-contato" placeholder="E-mail" type="text">
+                <h6>Mensagem:</h6>
+                <br><br>
+                <textarea name="campo texto" cols="30" rows="10"></textarea>
+                <a class="botao-contato" id="meuLink" href="#">Enviar</a>
+                <div id="mensagem">Mensagem Enviada!</div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
